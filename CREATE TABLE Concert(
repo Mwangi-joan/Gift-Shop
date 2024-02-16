@@ -1,0 +1,49 @@
+CREATE TABLE Concert(
+    ConcertDate Date,
+    CompositionID Int,
+    ConductorID Int,
+    FOREIGN KEY(CompositionID),
+    FOREIGN KEY(ConductorID)
+);
+
+
+
+CREATE TABLE Composition(
+    CompositionID int(10) NOT NULL PRIMARY KEY,
+    CompositionName varchar(50),
+    FOREIGN KEY(MovementID) REFERENCES Movement(MovementID),
+    FOREIGN KEY(SoloistID) REFERENCES Soloist(SoloistID)
+);
+
+
+
+
+'''print('Hello, world!')
+print('What is your name?')    # ask for their name
+myName = input()
+print('It is good to meet you, ' + myName)
+print('The length of your name is:')
+print(len(myName))
+print('What is your age?')    # ask for their age
+myAge = input()
+print('You will be ' + str(int(myAge) + 1) + ' in a year.')'''
+
+
+
+def abc():
+    number = input()
+    if len(str(number)) == 1:
+        return False
+    for i in range(len(str(number)) - 1):
+        prev, next = 0, 0
+        prev = number % 10
+        number = number // 10
+        next = number % 10
+
+        if (next == prev and next == 8):
+            return True
+        else:
+            continue
+    return False
+
+

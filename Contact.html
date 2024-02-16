@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css">
+
+</head>
+<body>
+	<header>
+    <img src="Images/Logo1.png" style="width: 600px; height: 250px; float: left;">
+
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Products</a>
+        <div class="dropdown-content">
+          	  <a href="Females.html">Female Adults</a>
+	          <a href="Males.html">Male Adults</a>
+	          <a href="Boys.html">Boys</a>
+	          <a href="Girls.html">Girls</a>
+
+        </div>
+      </li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="About.html">About Us</a></li>
+  </ul>
+
+  </header>
+  <section>
+  	<article>
+  		<form method="GET" action="something" style="text-align: left;">
+			Name: <input type="text" name="Fname" required="required"><br/>
+			Email Address: <input type="email" name="emailaddress" placeholder="xyz@gmail.com" required="required"><br/>
+			Phone Number: <input type="number" name="PNumber" required="required" placeholder="+2547"><br/>
+			County: <select>
+						<option>Nairobi</option>
+						<option>Kiambu</option>
+						<option>Nakuru</option>
+						<option>Machakos</option>
+						<option>Murang'a</option>
+					</select> <br/>
+			Gender: <input type="radio" name="gender" value="Female" id="Female">
+					<label for="Female">Female</label>
+					<input type="radio" name="gender" value="Male" id="Male">
+					<label for="Male">Male</label><br>
+					
+					<input type="checkbox" > I want to receive notifications!<br/>
+
+					<input type="submit" name="button" Value = "Contact Us">
+		</form>
+  	</article>
+  	<nav>
+  		<img src="Images/PhoneCall.gif" style="width: 300px;">
+  	</nav>
+  </section>
+
+</body>
+</html>
